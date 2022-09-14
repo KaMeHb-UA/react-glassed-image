@@ -7,17 +7,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 18
-      - run: yarn
-      - run: node build ${{ github.event.release.tag_name }}
-
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
     permissions:
       packages: write
       contents: read
@@ -27,6 +16,8 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
+      - run: yarn
+      - run: node build ${{ github.event.release.tag_name }}
       - run: |
           cd dist
           npm publish
