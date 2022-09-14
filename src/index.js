@@ -1,0 +1,1 @@
+export { GlassedImage } from '@/component';

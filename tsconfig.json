@@ -1,0 +1,26 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"allowJs": true,
+		"outDir": "./dist",
+		"module": "esnext",
+		"target": "esnext",
+		"checkJs": true,
+		"declaration": true,
+		"emitDeclarationOnly": true,
+		"paths": {
+			"@/*": ["src/*"],
+		},
+        "jsx": "react-jsx",
+	},
+	"include": [
+		"src/**/*",
+	],
+	"exclude": [
+		"node_modules/*",
+		"doc/*",
+		"dist/*",
+	],
+}
