@@ -33,9 +33,11 @@ const buildConfig = {
 	legalComments: 'none',
 };
 
+const versionArg = argv[2];
+
 const distPkgJson = {
 	name: 'react-glassed-image',
-	version: argv[2],
+	version: versionArg.startsWith('v') ? versionArg.slice(1) : versionArg,
 	type: 'commonjs',
 	main: 'index.js',
 	types: '@types/index.d.ts',
