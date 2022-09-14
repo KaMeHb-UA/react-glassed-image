@@ -36,7 +36,7 @@ const buildConfig = {
 const versionArg = argv[2];
 
 const distPkgJson = {
-	name: 'react-glassed-image',
+	name: '@kamehb-ua/react-glassed-image',
 	version: versionArg.startsWith('v') ? versionArg.slice(1) : versionArg,
 	type: 'commonjs',
 	main: 'index.js',
@@ -50,7 +50,7 @@ const distPkgJson = {
 		},
 	},
 	publishConfig: {
-        '@KaMeHb-UA:registry': 'https://npm.pkg.github.com',
+        '@kamehb-ua:registry': 'https://npm.pkg.github.com',
     },
 };
 

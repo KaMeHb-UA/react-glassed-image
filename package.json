@@ -1,5 +1,5 @@
 {
-    "name": "react-glassed-image",
+    "name": "@kamehb-ua/react-glassed-image",
     "type": "module",
     "devDependencies": {
         "@types/node": "^18.7.18",
