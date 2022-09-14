@@ -49,6 +49,9 @@ const distPkgJson = {
 			optional: true,
 		},
 	},
+	publishConfig: {
+        '@KaMeHb-UA:registry': 'https://npm.pkg.github.com',
+    },
 };
 
 async function writePkgJson(target){

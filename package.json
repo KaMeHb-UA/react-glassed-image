@@ -6,8 +6,5 @@
         "@types/react": "^16.2.0",
         "esbuild": "^0.15.7",
         "react": "^16.2.0"
-    },
-    "publishConfig": {
-        "@KaMeHb-UA:registry": "https://npm.pkg.github.com"
     }
 }
